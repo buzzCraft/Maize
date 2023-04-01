@@ -44,7 +44,7 @@ var MMorGMEPrivateKey = settings.MMorGMEPrivateKey; //metamask or gamestop priva
 var fromAddress = settings.LoopringAddress; //your loopring address
 var fromAccountId = settings.LoopringAccountId; //your loopring account id
 var validUntil = settings.ValidUntil; //the examples seem to use this number
-var maxFeeTokenId = 1; //0 should be for ETH, 1 is for LRC BUUUUT hardcoding LRC cause LRC
+var maxFeeTokenId = settings.PayFeesIn; //0 should be for ETH, 1 is for LRC BUUUUT hardcoding LRC cause LRC
 int toAccountId = 0; //leave this as 0 DO NOT CHANGE
 int environment = settings.Environment;
 string pinataJwt = settings.PinataJwt;
@@ -64,8 +64,13 @@ string myAddress = "0x37EA02537f3A7A7fFC221125245905Be3D5423e6";
 int myAccountId;
 
 string accessLogo = "0x08dccae9dac82c69e6836977c932bb55e608d548d19e95addee8817f7edb5f8d";
-string maizeLdsLogo= "0x2fa975f47dc5929980a8bc01ad5173302a9f6f246ae219ac7a0a4592547cdf87";
+string maizeLdsLogo = "0x2fa975f47dc5929980a8bc01ad5173302a9f6f246ae219ac7a0a4592547cdf87";
 decimal lcrTransactionFee = 0.000000000000000001m;
+
+if (maxFeeTokenId == 0)
+{
+    maxFeeToken = "ETH";
+}
 
 if (environment == 1)
 {

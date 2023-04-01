@@ -18,5 +18,6 @@ namespace Maize
         public string MMorGMEPrivateKey { get; set; }
         public string PinataJwt { get; set; }
         public string NftStorageApiKey { get; set; }
+        public int PayFeesIn { get; set; }
     }
 }
