@@ -33,7 +33,7 @@ namespace Maize.Helpers
             font.ToPrimary(@"          M::::::M               M::::::Ma::::a    a:::::a i::::::i  z::::::zzzzzzzze::::::::e          ");
             font.ToPrimary(@"          M::::::M               M::::::Ma:::::aaaa::::::a i::::::i z::::::::::::::z e::::::::eeeeeeee  ");
             font.ToPrimary(@"          M::::::M               M::::::M a::::::::::aa:::ai::::::iz:::::::::::::::z  ee:::::::::::::e  ");
-            font.SetVersionFontColor(@"          MMMMMMMM","       v0.2.0","  MMMMMMMM  aaaaaaaaaa  aaaaiiiiiiiizzzzzzzzzzzzzzzzz    eeeeeeeeeeeeee  ");
+            font.SetVersionFontColor(@"          MMMMMMMM","       v0.3.0","  MMMMMMMM  aaaaaaaaaa  aaaaiiiiiiiizzzzzzzzzzzzzzzzz    eeeeeeeeeeeeee  ");
             font.ToSecondary("= = = Analytics and Airdrops for your Crypto and Nfts = = = = = = = = = = = = = = = = = = = = = = = = = = =");
             Console.WriteLine();
             font.SetBraggingFont($"Maize ", "has completed ", usersTransactionsAndNftsSent.Sum(x => x.transactionCount).ToString(), " transactions and sent ", usersTransactionsAndNftsSent.Sum(x => x.nftAmountSent).ToString(), " Nfts.");
@@ -73,7 +73,7 @@ namespace Maize.Helpers
                 {"utilityFourteen", "Send unique NFTs to any users"},
                 {"utilityFifteen", "Send Nfts to the Dead address"},
                 {"utilitySixteen", "Send LRC to any users"},
-                {"utilitySeventeen", "Send LRC to any users with different amounts"},
+                {"utilitySeventeen", "Send LRC to any users (include amounts)"},
                 {"utilityEighteen", "Pay Loopring activation fee for wallets"},
                 {"utilityNineteen", "Nft Transfer Leaderboards"},
                 {"utilityTwenty", "Minted Collection Analytics"},
